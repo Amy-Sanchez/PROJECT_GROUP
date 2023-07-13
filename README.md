@@ -50,8 +50,11 @@ Cómo utilizar
 El proceso de configuración del espacio de trabajo de desarrollo es más simple que nunca con los siguientes pasos:
 
 Install python3.
+
 Install Docker for Desktop.
+
 Clone este proyecto en su máquina local.
+
 Abra la terminal y asegúrese de estar en el directorio raíz de este proyecto, ejecute el comando docker-compose up (esto hará que MongoDB Sharded Cluster funcione automáticamente). Eso es todo.
 Ejecutar la aplicación
 
