@@ -3,7 +3,8 @@
 ¿Qué es fragmentación?
 Sharding es un método para distribuir datos entre varias máquinas. MongoDB usa fragmentación para admitir implementaciones con conjuntos de datos muy grandes y operaciones de alto rendimiento.
 
-Los sistemas de bases de datos con grandes conjuntos de datos o aplicaciones de alto rendimiento pueden desafiar la capacidad de un solo servidor. Por ejemplo, las altas tasas de consultas pueden agotar la capacidad de la CPU del servidor. Los tamaños de conjuntos de trabajo más grandes que la RAM del sistema hacen hincapié en la capacidad de E/S de las unidades de disco.
+Los sistemas de bases de datos con grandes conjuntos de datos o aplicaciones de alto rendimiento pueden desafiar la capacidad de un solo servidor.
+Por ejemplo, las altas tasas de consultas pueden agotar la capacidad de la CPU del servidor. Los tamaños de conjuntos de trabajo más grandes que la RAM del sistema hacen hincapié en la capacidad de E/S de las unidades de disco.
 
 Hay dos métodos para abordar el crecimiento del sistema: escalado vertical y horizontal. MongoDB admite el escalado horizontal a través de Sharding.
 
@@ -11,7 +12,9 @@ Clúster fragmentado
 Un clúster fragmentado de MongoDB consta de los siguientes componentes:
 
 fragmento: cada fragmento contiene un subconjunto de los datos fragmentados. Cada fragmento se puede implementar como un conjunto de réplicas.
+
 mongos: los mongos actúan como un enrutador de consultas, proporcionando una interfaz entre las aplicaciones cliente y el clúster fragmentado.
+
 Servidores de configuración: los servidores de configuración almacenan metadatos y ajustes de configuración para el clúster.
 
 El sistema invocará un clúster compuesto por:
